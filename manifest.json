@@ -1,9 +1,11 @@
 {
-  "name": "Getting Started Example",
+  "name": "GAF",
   "version": "1.0",
-  "description": "Build an Extension!",
-  "browser_action": {
-    "default_popup": "popup.html"
+  "description": "gitlab auto fill",
+  "permissions": ["activeTab",  "webNavigation", "*://*/*"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
   },
   "manifest_version": 2
 }
