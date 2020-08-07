@@ -2,7 +2,10 @@
   "name": "GAF",
   "version": "1.0",
   "description": "gitlab auto fill",
-  "permissions": ["activeTab",  "webNavigation", "*://*/*"],
+  "permissions": ["activeTab", "webNavigation", "*://*/*"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
   "background": {
     "scripts": ["background.js"],
     "persistent": false

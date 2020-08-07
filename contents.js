@@ -6,7 +6,7 @@ function getFormatDate(date) {
   day = day >= 10 ? day : "0" + day;
   return year + "." + month + "." + day;
 }
-const name = "";
+const name = localStorage.getItem("crsdevName");
 let text = "";
 text += "### Overview\n";
 text += "| 항목         | 내용         |\n";
